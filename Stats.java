@@ -1,14 +1,19 @@
 import java.util.Arrays;
 public class Stats {
 	public static void main(String[] args) {
-		countNum(Integer.parseInt(args));
-	}
-	public static countNum(int[] num) {
+		if (args.length == 0) {
+			System.err.println("Usage: java Max <numbers>" );
+		}
+		
 		int num = 0;
-		for (int i=0; i<num.length; i++) {
-			if (num.charAt(i)==' ') {
+		for (int i=0; i<args.length; i++) {
+			if (args.charAt(i)==' ') {
 				num++;
 			} 
-		} return num+1;
+		} 
+		
+		for (int i : args) {
+			sum+=args.
+		}
 	}
 }
